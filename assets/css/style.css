@@ -63,22 +63,6 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-/*@media(min-width:768px) {
-    header .container {
-        padding-top: 120px;
-        padding-bottom: 20px;
-    }
-
-    header .intro-text .name {
-        font-size: 4.75em;
-    }
-
-    header .intro-text .skills {
-        font-size: 1.75em;
-    }
-}*/
-
-
 @media(min-width:768px) {
     .navbar-default {
         border-radius: 0px;
@@ -195,11 +179,53 @@ Pagina inicial
 .blogShort{ border-bottom:1px solid #ddd;}
 .add{background: #333; padding: 10%; height: 300px;}
 
+/* Botão de busca */
+#custom-search-input {
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#D9230F;
+    z-index: 2;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}
+/* Fim botão de busca */
+
 article p{
     font-size: 14px;
-line-height: 1.42857;
-color: #333;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.42857;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .margin10{
@@ -273,25 +299,25 @@ footer .footer-below {
     padding: 25px 0;
     background-color: #242D34;
 
-.btn-social {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 45px;
-}
+    .btn-social {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 45px;
+    }
 
-.btn:focus,
-.btn:active,
-.btn.active {
-    outline: 0;
-}
+    .btn:focus,
+        .btn:active,
+        .btn.active {
+        outline: 0;
+    }
 
-.justify p{
-    text-align: justify;
-    text-indent: 30px;
-    text-justify: inter-word;
-}
+    .justify p{
+        text-align: justify;
+        text-indent: 30px;
+        text-justify: inter-word;
+    }
