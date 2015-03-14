@@ -3,8 +3,17 @@ body {
     background-color: #fff;
 }
 
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+    background-color: #376286;
+}
+
 p {
     font-size: 20px;
+}
+
+.breadcrumb{
+    border-radius: 0px;
 }
 
 .panel-body p{
@@ -158,8 +167,6 @@ header .intro-text .skills {
     padding-bottom: 0px;
 }
 
-
-
 /*
 Pagina inicial
 */
@@ -184,6 +191,38 @@ Pagina inicial
     margin:0;
     margin-top: 10px;
     padding: 0;
+}
+
+.laboratorio{
+    margin: 0 auto;
+    display: table;
+}
+
+/* Laboratório */
+
+.thumbnail{
+    border-radius: 0px;
+}
+
+.thumbnail .caption-full {
+    color: #333;
+    padding: 9px;
+    text-align: justify;
+}
+
+/* Membro */
+.col-membro{
+    max-width: 350px;
+}
+
+.caption-full p{
+    font-size: 15px;
+}
+
+.ratings {
+    color: #d17581;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #custom-search-input .search-query {
@@ -293,6 +332,7 @@ footer .footer-above {
 
 footer .footer-col {
     margin-bottom: 50px;
+    
 }
 
 footer .footer-below {
