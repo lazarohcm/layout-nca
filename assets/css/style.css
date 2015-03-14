@@ -215,6 +215,14 @@ Pagina inicial
     max-width: 350px;
 }
 
+.nome-membro{
+    font-size: 15px
+}
+
+.bio-membro{
+    font-size: 14px;
+}
+
 .caption-full p{
     font-size: 15px;
 }
