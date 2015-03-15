@@ -16,6 +16,10 @@ p {
     border-radius: 0px;
 }
 
+.panel{
+    border-radius: 0;
+}
+
 .panel-body p{
     font-size: 15px;
 }
@@ -340,7 +344,7 @@ footer .footer-above {
 
 footer .footer-col {
     margin-bottom: 50px;
-    
+
 }
 
 footer .footer-below {
