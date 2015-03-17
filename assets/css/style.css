@@ -288,9 +288,21 @@ article p{
     margin-right: 10px;
 }
 
-/*.dropdown-menu > li > a {
-    background-color: #37678F;
-}*/
+.btn-user-social {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 2px solid #337AB7;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-user-social:hover,
+.btn-user-social:focus,
+.btn-user-social:active,
+.btn-user-social.active {
+    border: solid 2px #18bc9c;
+    color: #18bc9c;
+}
 
 .btn-outline {
     margin-top: 15px;
