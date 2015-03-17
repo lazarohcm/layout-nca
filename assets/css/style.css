@@ -98,7 +98,7 @@ header .intro-text .skills {
 
 @media screen and (max-width: 768px){
     .navbar-header{
-        padding-top: 20px;
+        //padding-top: 20px;
     }
 }
 
@@ -140,7 +140,15 @@ header .intro-text .skills {
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav li a  {
     color: #fff;
+    text-align: center;
 }
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #325D81;
+}   
 
 .navbar-default .navbar-brand:hover , .navbar-default .navbar-nav li a:hover  {
     color: #142634;
