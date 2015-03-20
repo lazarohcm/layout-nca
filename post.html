@@ -30,6 +30,35 @@
     </head>
 
     <body id="page-top" class="index">
+        <!-- Facebook API -->
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Twitter API -->
+        <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
+
+        <!-- GPlus API -->
+        <script src="https://apis.google.com/js/platform.js" async defer>
+            {
+                lang: 'pt-BR'
+            }
+        </script>
 
         <!-- Navigation -->
         <nav class="navbar navbar-default">
@@ -87,42 +116,50 @@
         <!-- Page Content -->
         <div class="container page-content">
             <div class="col-lg-12">
-                <div class="thumbnail content-usuario">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    <div class="caption-full">
-                        <h4 class="text-center">
-                            <a href="http://lattes.cnpq.br/8040933112880441">Lázaro Henrique de Carvalho Marques</a>
-                        </h4>
-                    </div>
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a target="_blank" class="btn-user-social" href="https://www.facebook.com/lazarohcm">
-                                <i class="fa fa-fw fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" class="btn-user-social" href="https://www.facebook.com/lazarohcm">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" class="btn-user-social" href="https://www.facebook.com/lazarohcm">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="text-center">
-                        <span><strong>Áreas de interesse: </strong></span>
-                        <span class="label label-warning">HTML5/CSS/Javascript</span>
-                        <span class="label label-info">PHP/MySQL</span>
-                        <span class="label label-success">GIS</span>
-                    </div>
+                <h1 class="page-header">Novo Portal do NCA</h1>
+                <p class="blog-post-date">
+                    January 1, 2014 by 
+                </p>
+                <div class="col-lg-10  col-lg-offset-1">
+                    <img class="img-responsive capa-blog" src="http://placehold.it/700x300/81326D/ffffff&text=Capa do Post" alt="">
                     <hr>
-                    <div class="form-group">
-                        <label>Laboratório: </label>
-                        <label>Membro desde: </label>
-                        <label>Até: </label>
+                    <article class="text-justify">
+                        <h4>
+                            Lorem ipsum dolor sit amet,
+                        </h4> consectetur adipiscing elit. Sed sed enim in risus condimentum sagittis non et mi. Nulla facilisi. Pellentesque quis commodo neque. Praesent molestie semper molestie. Mauris aliquam, nisi id hendrerit porta, orci arcu tincidunt eros, ut rutrum lacus justo ut metus. Nam porttitor dignissim imperdiet. Nulla lacinia volutpat turpis eget facilisis. Curabitur elementum orci id sodales vestibulum. Phasellus sed pulvinar felis, ac malesuada justo. Cras finibus consequat justo, vitae pellentesque leo interdum nec. Sed venenatis neque at dictum volutpat. Vivamus vulputate at quam in aliquet. Donec lobortis sem eros, a lacinia ligula euismod sed. Sed ac arcu augue.
+
+                        <h4>Donec condimentum diam non urna sodales tempus. </h4> Nunc vulputate purus quis mauris efficitur pretium. Etiam eros ligula, mollis id semper ut, pellentesque sed lorem. Aliquam neque quam, hendrerit non malesuada at, hendrerit ac leo. Integer in mauris rhoncus, auctor nunc sed, porta elit. Etiam ac nulla bibendum, fringilla urna vel, mollis justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean imperdiet velit vitae urna egestas, ac condimentum ex mattis. Aenean quis iaculis lacus. Sed pulvinar sem sed dui vulputate vestibulum quis vulputate orci. Morbi sit amet velit ac libero dapibus feugiat. Duis hendrerit dapibus risus non viverra. Pellentesque at varius felis. Aliquam posuere tristique dolor. Donec tempus est vel leo varius dapibus.
+
+                        <h4>Curabitur eros quam, scelerisque non ultricies ut,</h4> posuere sit amet massa. Quisque accumsan non velit pharetra sagittis. Curabitur rutrum commodo tristique. Aenean varius dui nec dignissim ornare. Nam consequat sapien in ullamcorper vulputate. Suspendisse potenti. Curabitur in vestibulum enim. Praesent justo urna, tempus nec nunc ac, suscipit feugiat leo. Mauris volutpat sodales dignissim. Praesent imperdiet elementum nibh, ac scelerisque arcu mattis ac. Duis nec lorem ac erat laoreet mollis. Aliquam justo massa, auctor et dolor lobortis, dignissim commodo erat. Integer dictum laoreet lectus ac feugiat. Morbi auctor tristique feugiat. Vivamus non massa at nunc malesuada sodales ac vel nibh. Nam molestie tincidunt libero, sed luctus urna finibus non.
+
+                        <h4>Morbi semper, velit sit amet pharetra ultricies,</h4> libero est ornare enim, et vestibulum ipsum sem eget quam. Morbi quis urna odio. In viverra gravida nulla nec pellentesque. Fusce ultricies leo non efficitur commodo. Ut fringilla neque a justo volutpat fringilla. Quisque rhoncus ultrices sapien, vitae convallis ligula laoreet sed. Donec non sagittis nisl. Fusce posuere nunc et elit consectetur pulvinar.
+
+                        <h4>Donec cursus est ac elementum sagittis.</h4> Sed venenatis enim a enim commodo mollis. Nunc tincidunt est id lorem elementum, eget tincidunt purus ornare. Nulla aliquam metus id nulla vulputate cursus. Morbi malesuada hendrerit magna, fermentum porta nulla. Duis gravida tortor vitae elit sollicitudin dignissim. Curabitur sodales faucibus varius. Aliquam tristique turpis in justo feugiat ultrices. In a tortor laoreet, facilisis turpis nec, fringilla mauris. 
+                    </article>
+
+                    <div class="social-buttons text-center">
+                        <!-- Twitter -->
+<!--                        <a href="http://twitter.com/home?status= " title="Share on Twitter" target="_blank" class="btn btn-twitter">
+                            <i class="fa fa-twitter"></i> Twitter
+                        </a>-->
+                        <!--  Facebook -->
+<!--                        <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="btn btn-facebook">
+                            <i class="fa fa-facebook"></i> Facebook
+                        </a>-->
+                        <!-- Google+ -->
+<!--                        <a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank" class="btn btn-googleplus">
+                            <i class="fa fa-google-plus"></i> Google+
+                        </a>-->
+
+                        <!--  Facebook button  -->
+                        <div class="fb-share-button" data-href="http://lazarohcm.github.io/layout-nca" data-layout="button_count"></div>
+                        <!--  Twitter button -->
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lazarohcm.github.io/layout-nca" data-via="lazarohcm">Tweet</a>
+                        <!--  GPlus button -->
+                        <div class="g-plus" data-action="share"></div>
                     </div>
+
+
 
                 </div>
             </div>

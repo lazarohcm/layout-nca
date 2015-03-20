@@ -291,6 +291,65 @@ article p{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.content-usuario{
+    margin-top: 30px;
+}
+
+article{
+    margin-bottom: 20px;
+}
+
+.blog-post-date {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.capa-blog{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-buttons{
+    margin-bottom: 20px;
+}
+
+.btn-twitter {
+    background: #00acee;
+    border-radius: 0;
+    color: #fff
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff
+}
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}
+.btn-googleplus {
+    background: #e93f2e;
+    border-radius: 0;
+    color: #fff
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+    background: #ba3225;
+    color: #fff
+}
+
 .margin10{
     margin-bottom: 10px;
     margin-right: 10px;
