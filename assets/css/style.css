@@ -1,13 +1,11 @@
 body {
     overflow-x: hidden;
     background-color: #fff;
-
-
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
 }
 
 /*Navbar */
-
-
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -34,10 +32,6 @@ body {
 
 .navbar-default {
     background-color: #fff;
-}
-
-.navbar-toggle{
-    border-radius: 0;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -86,8 +80,7 @@ body {
 
 .dropdown-menu{
     background-color: #E5E9EB;
-    min-width: 171px;
-    border-radius: 0px;
+    min-width: 177px;
 }
 
 .dropdown-menu li a:hover{
@@ -99,16 +92,13 @@ p {
     font-size: 20px;
 }
 
-.panel{
-    border-radius: 0;
+b {
+    font-size: 20px;
 }
+
 
 .panel-body p{
-    font-size: 15px;
-}
-
-.well, .well-sm{
-    border-radius: 0;
+    font-size: 17px;
 }
 
 p.small {
@@ -166,6 +156,56 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+.container-dashboard{
+    margin-left: 40px;
+    width: 90%;
+}
+.dashboard-options{
+    margin-top: 80px;
+}
+.dashboard-options li{
+    background-color: #f5f5f5;
+    border: 0;
+}
+.dashboard-content{
+    margin-top: 40px;
+}
+
+/* Reovendo border-radius*/
+.list-group-item:first-child,
+.list-group-item:last-child,
+.pagination > li:first-child > a, .pagination > li:first-child > span,
+.pagination > li:last-child > a, .pagination > li:last-child > span,
+.input-sm, .form-group-sm .form-control, .form-control,
+.btn, .btn-blog, .navbar-toggle, .dropdown-menu, .well, .well-sm, .panel,
+.painel-laboratorio div .panel, .projeto, .thumbnail{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius: 0;
+}
+
+.modal-lg{
+    width: 90%;
+}
+
+.modal-content{
+    border-radius: 0px;
+}
+
+.btn-block{
+    margin-top: 10px;
+}
+
+.img-upload{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Css para diferentes tipos de resoluções */
 @media(min-width:768px) {
     .navbar-default {
         border-radius: 0px;
@@ -180,11 +220,14 @@ header .intro-text .skills {
         -moz-transition: all .3s;
         transition: all .3s;
     }
+
 }
 
 @media screen and (max-width: 768px){
-    .navbar-header{
-        //padding-top: 20px;
+    .dashboard-options{
+        margin-top: 10px;
+        max-height: 90px;
+        overflow-y: scroll;
     }
 }
 
@@ -193,22 +236,16 @@ header .intro-text .skills {
         margin: 0 auto;
         float: none;
     }
+    .dashboard-options{
+        margin-top: 10px;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
 }
 
 /*
 Pagina inicial
 */
-
-/* Laboraorios */
-.painel-laboratorio div .panel{
-    border-radius: 0px;
-}
-
-/*Projetos*/
-.projeto{
-    border-radius: 0px;
-}
-
 
 /* Notcias*/
 .blogShort{ border-bottom:1px solid #ddd;}
@@ -228,10 +265,6 @@ Pagina inicial
 
 /* Laboratório */
 
-.thumbnail{
-    border-radius: 0px;
-}
-
 .thumbnail .caption-full {
     color: #333;
     padding: 9px;
@@ -248,11 +281,11 @@ Pagina inicial
 }
 
 .bio-membro{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .caption-full p{
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .ratings {
@@ -269,9 +302,6 @@ Pagina inicial
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
     margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
 }
 
 #custom-search-input button {
@@ -284,9 +314,6 @@ Pagina inicial
     left: -28px;
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
     margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
     color:#D9230F;
     z-index: 2;
 }
@@ -297,10 +324,10 @@ Pagina inicial
 /* Fim botão de busca */
 
 article p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.42857;
     color: #333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .content-usuario{
@@ -372,7 +399,6 @@ article{
 }
 
 .btn{
-    border-radius: 0px;
     border: 0px;
 }
 
@@ -380,7 +406,6 @@ article{
     color: #ffffff;
     background-color: #85A5C0;
     border-color: #85A5C0;
-    border-radius:0;
     margin-bottom:10px
 }
 

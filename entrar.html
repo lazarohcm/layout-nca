@@ -29,13 +29,13 @@
 
     </head>
 
-    <body id="page-top" class="index">
+    <body id="page-top">
 
         <!-- Navigation -->
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll col-md-2 navbar">
+                <div class="navbar-header col-md-2 navbar">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -50,7 +50,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse col-md-6" id="menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="page-scroll">
+                        <li>
                             <a href="noticias.html">Notícias</a>
                         </li>
 
@@ -62,19 +62,19 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="page-scroll">
+                        <li >
                             <a href="projetos.html">Projetos</a>
                         </li>
-                        <li class="page-scroll">
+                        <li >
                             <a href="publicacoes.html">Publicações</a>
                         </li>
-                        <li class="page-scroll">
+                        <li >
                             <a href="membros.html">Membros</a>
                         </li>
-                        <li class="page-scroll">
+                        <li >
                             <a href="agendar.html">Agendar</a>
                         </li>
-                        <li class="page-scroll">
+                        <li >
                             <a href="contato.html">Contato</a>
                         </li>
                     </ul>
@@ -85,45 +85,43 @@
         </nav>
 
         <!-- Page Content -->
-        <div class="container page-content">
-            <div class="col-lg-12">
-                <h1 class="page-header">Agendar</h1>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading">
-                                <span class="fa-stack fa-5x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-university fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Auditório</h4>
-                                <p>Agende uma data na qual pretende agendar a atulização do nosso Auditório</p>
-                                <a target="_blank" href="https://www.google.com/calendar/embed?src=5p9hnbmt73hdec4bahcl79cp0c%40group.calendar.google.com&ctz=America/Belem" class="btn btn-primary">
-                                    Agendar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="panel panel-default text-center">
-                            <div class="panel-heading">
-                                <span class="fa-stack fa-5x">
-                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                    <i class="fa fa-university fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Sala de Reunião</h4>
-                                <p>Agende uma data na qual pretende agendar a atulização do nossa Sala de Reuniões</p>
-                                <a target="_blank" href="https://www.google.com/calendar/embed?src=8go5ica5hhnqnr7i2c53ptifkc%40group.calendar.google.com&ctz=America/Belem" class="btn btn-primary">
-                                    Agendar</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+            <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-4 text-center">
+                    <h1 class="page-header">Área Administrativa</h1>
+                </div>
+                <!-- /.row -->
+                <div class=" col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-3">                    
+                    <div class="panel panel-info" >
+                        <div class="panel-heading">
+                            <div class="panel-title">Entrar</div>
+                        </div>     
+
+                        <div class="panel-body" >
+                            <br>
+                            <form id="loginform" class="form-horizontal" role="form" method="POST" action="dashboard/noticias.html">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="usuario" type="text" class="form-control" name="usuario" value="" placeholder="Usuário">                                        
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input id="senha" type="password" class="form-control" name="senha" placeholder="Senha">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <!-- Button -->
+                                    <div class="col-sm-12">
+                                        <button id="btn-login" type="submit" class="btn btn-success">Entrar  </button>
+                                    </div>
+                                </div>    
+                            </form>     
+                        </div>                     
+                    </div>  
                 </div>
             </div>
-
         </div>
         <!-- Footer -->
         <footer class="text-center">
